@@ -34,11 +34,8 @@ import java.util.List;
  * 
  * @phase process-sources
  */
-@Mojo(name = "counter", defaultPhase = LifecyclePhase.COMPILE)
-public class MyMojo extends AbstractMojo
-{
-
-
+@Mojo(name = "dependency-counter", defaultPhase = LifecyclePhase.COMPILE)
+public class DependencyCounterMojo extends AbstractMojo {
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
         getLog().info("Number of dependencies: " + 5);
