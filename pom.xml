@@ -3,7 +3,7 @@
   <groupId>com.baeldung</groupId>
   <artifactId>counter-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.2.3-SNAPSHOT</version>
+  <version>1.2.3</version>
   <name>counter-maven-plugin Maven Mojo</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -27,7 +27,7 @@
   <scm>
     <connection>scm:git:https://github.com/jouini1311/plug.git</connection>
     <developerConnection>scm:git:https://github.com/jouini1311/plug.git</developerConnection>
-    <tag>counter-maven-plugin-1.2.1</tag>
+    <tag>counter-maven-plugin-1.2.3</tag>
   </scm>
   <dependencies>
     <dependency>
@@ -55,10 +55,6 @@
           <executions>
             <execution>
               <id>help-mojo</id>
-              <goals>
-                <!-- good practice is to generate help mojo for plugin -->
-                <goal>dependency-counter</goal>
-              </goals>
             </execution>
           </executions>
         </plugin>
