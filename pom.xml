@@ -53,6 +53,15 @@
         <plugin>
           <artifactId>maven-plugin-plugin</artifactId>
           <version>2.2</version>
+          <executions>
+            <execution>
+              <id>help-mojo</id>
+              <goals>
+                <!-- good practice is to generate help mojo for plugin -->
+                <goal>helpmojo</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
