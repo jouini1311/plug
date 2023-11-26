@@ -34,16 +34,13 @@ import java.util.List;
  * 
  * @phase process-sources
  */
-@Mojo(name = "dependency-counter", defaultPhase = LifecyclePhase.COMPILE)
+@Mojo(name = "counter", defaultPhase = LifecyclePhase.COMPILE)
 public class MyMojo extends AbstractMojo
 {
-    @Parameter(defaultValue = "${project}", required = true, readonly = true)
-    MavenProject project;
+
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
-        List<Dependency> dependencies = project.getDependencies();
-        long numDependencies = dependencies.stream().count();
-        getLog().info("Number of dependencies: " + numDependencies);
+        getLog().info("Number of dependencies: " + 5);
     }
 }
